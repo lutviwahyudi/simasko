@@ -1,0 +1,26 @@
+body {
+    background-image: url('http://localhost/masko/public/assets/img/bg3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.login-box {
+    position: relative;
+    z-index: 2;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: #211951;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(255, 251, 251);
+}
+
+.w-48 {
+    width: 100%;
+}
