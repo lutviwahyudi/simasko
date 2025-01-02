@@ -17,7 +17,6 @@
     <div class="content">
         <div class="d-flex justify-content-center align-items-center vh-100">
             <div class="login-box p-6">
-                <!-- ini adalah alert pengiriman pesan -->
                 <?php if (session()->getFlashdata('success')) : ?>
                     <div id="alert" class="alert alert-success mx-auto" style="">
                         <?= session()->getFlashdata('success'); ?>
@@ -27,23 +26,19 @@
                         <?= session()->getFlashdata('error'); ?>
                     </div>
                 <?php endif; ?>
-                <!-- akhir code -->
-
-                <!-- ini script alert -->
+            
                 <script>
-                    // Menghilangkan alert setelah 5 detik
                     setTimeout(function() {
                         var alert = document.getElementById('alert');
                         if (alert) {
                             alert.style.display = 'none';
                         }
-                    }, 5000); // 5000 ms = 5 detik
-                </script>
-                <!-- ini script alert -->
+                    }, 5000);
+                </script>              
                 <form action="<?= base_url('home/submit_regis') ?>" method="post" enctype="multipart/form-data">
                     <div class="text-center mb-3">
                         <h4 style="color: white;">Simasko Aquarium</h4>
-                        <p style="color: white;">Sistem Monitoring & Kontrol Aquarium Ikan Koi</p>
+                        <p style="color: white;">Sistem Monitoring & Kontrol Aquarium Ikan Koki</p>
                     </div>
                     <div class="form-group mb-4">
                         <input type="text" class="form-control" id="name" name="name" placeholder="Username" required>

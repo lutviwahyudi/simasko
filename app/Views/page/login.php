@@ -40,16 +40,16 @@
                     }, 5000); // 5000 ms = 5 detik
                 </script>
                 <!-- ini script alert -->
-                <form>
+                <form action="<?= base_url('home/submit_login')?>" method="post" enctype="multipart/form-data">
                     <div class="text-center mb-3">
                         <h4 style="color: white;">Simasko Aquarium</h4>
-                        <p style="color: white;">Sistem Monitoring & Kontrol Aquarium Ikan Koi</p>
+                        <p style="color: white;">Sistem Monitoring & Kontrol Aquarium Ikan Koki</p>
                     </div>
                     <div class="form-group mb-4">
-                        <input type="text" class="form-control" id="name" placeholder="Username">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Username">
                     </div>
                     <div class="form-group mb-4">
-                        <input type="password" class="form-control" id="password" placeholder="Password">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
                     </div>
                     <div class="text-center mb-3">
                         <small class="form-text text-muted">Belum punya akun ? Silahkan Sign Up</small>
